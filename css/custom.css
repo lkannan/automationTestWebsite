@@ -2,6 +2,14 @@
   font-weight: bolder;
 }
 
+.columns {
+  text-align: center;
+}
+
+.hero-heading {
+  text-align: left;
+}
+
 /* Shared
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button {
