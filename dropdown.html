@@ -1,72 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8" />
-    <title>Test Website | Dropdown</title>
-    <meta name="description" content="" />
-    <meta name="author" content="" />
 
-    <!-- Mobile Specific Metas
+<head>
+  <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <title>Test Website | Dropdown</title>
+  <meta name="description" content="" />
+  <meta name="author" content="" />
 
-    <!-- FONT
+  <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link
-      href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
-      rel="stylesheet"
-      type="text/css"
-    />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- CSS
+  <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/skeleton.css" />
-    <link rel="stylesheet" href="css/custom.css" />
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css" />
 
-    <!-- Scripts
+  <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  </head>
-  <body>
-    <!-- Primary Page Layout
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/skeleton.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <div class="section hero">
-      <div class="container">
-        <div class="row">
-          <div class="eight columns">
-            <h4 class="hero-heading bold">Try handling Dropdowns</h4>
-          </div>
-          <div class="four columns">
-            <a href="index.html" class="button button">Back To Home</a>
-          </div>
+  <div class="section hero">
+    <div class="container">
+      <div class="row">
+        <div class="eight columns">
+          <h4 class="hero-heading bold">Try handling Dropdowns</h4>
         </div>
-        <br /><br />
-        <div class="row">
-          <div class="four columns">
-            <h5 class="bold">
-              <select name="cars" id="cars">
-                <option value="Volvo V6">Volvo V6</option>
-                <option value="Hyundai I 20">Hyundai I20</option>
-                <option value="Mercedes Benz AMG Black Edition">
-                  Mercedes Benz AMG Black Edition
-                </option>
-                <option value="Audi Q5">Audi Q5</option>
-                <option value="Ferrari GTO">Ferrari GTO</option>
-                <option value="Aston Martin DBX - F1 Edition">
-                  Aston Martin DBX - F1 Edition
-                </option>
-              </select>
-            </h5>
-          </div>
+        <div class="four columns">
+          <a href="index.html" class="button button">Back To Home</a>
         </div>
       </div>
+      <br><br>
+      <div class="row">
+        <div class="four columns">
+          <h5 class="bold">
+        <label for="cars">Choose a car</label>
+        <br>
+        <select name="cars" id="cars">
+          <option value="Volvo V6">Volvo V6</option>
+          <option value="Hyundai I 20">Hyundai I20</option>
+          <option value="Mercedes Benz AMG Black Edition">Mercedes Benz AMG Black Edition</option>
+          <option value="Audi Q5">Audi Q5</option>
+          <option value="Ferrari GTO">Ferrari GTO</option>
+          <option value="Aston Martin DBX - F1 Edition">Aston Martin DBX - F1 Edition</option>
+          <option value="Toyota Camry">Toyota Camry</option>
+          <option value="Honda Civic">Honda Civic</option>
+          <option value="BMW M3">BMW M3</option>
+          <option value="Ford Mustang">Ford Mustang</option>
+          <option value="Chevrolet Corvette">Chevrolet Corvette</option>
+          <option value="Nissan GT-R">Nissan GT-R</option>
+          <option value="Porsche 911">Porsche 911</option>
+          <option value="Lamborghini Aventador">Lamborghini Aventador</option>
+          <option value="Maserati GranTurismo">Maserati GranTurismo</option>
+          <option value="Jaguar F-Type">Jaguar F-Type</option>
+          <option value="Tesla Model S">Tesla Model S</option>
+          <option value="Subaru WRX STI">Subaru WRX STI</option>
+          <option value="Mazda MX-5 Miata">Mazda MX-5 Miata</option>
+          <option value="Kia Stinger">Kia Stinger</option>
+        </select>
+          </h5>
+        </div>
+        <div class="two columns">.</div>
+        <div class="six columns">
+          <h5 class="bold">
+        <label for="bikes">Choose a bike (Multi-select enabled)</label>
+        <br>
+        <select name="bikes" id="bikes" multiple style="height: 200px;">
+          <option value="Honda CBR1000RR">Honda CBR1000RR</option>
+          <option value="Yamaha YZF-R1">Yamaha YZF-R1</option>
+          <option value="Kawasaki Ninja ZX-10R">Kawasaki Ninja ZX-10R</option>
+          <option value="Suzuki GSX-R1000">Suzuki GSX-R1000</option>
+          <option value="Ducati Panigale V4">Ducati Panigale V4</option>
+          <option value="BMW S1000RR">BMW S1000RR</option>
+          <option value="Aprilia RSV4">Aprilia RSV4</option>
+          <option value="Triumph Daytona 675">Triumph Daytona 675</option>
+          <option value="KTM RC 390">KTM RC 390</option>
+          <option value="Harley-Davidson Street Glide">Harley-Davidson Street Glide</option>
+          <option value="Indian Scout">Indian Scout</option>
+          <option value="Ducati Monster 821">Ducati Monster 821</option>
+          <option value="Yamaha MT-09">Yamaha MT-09</option>
+          <option value="Kawasaki Z900">Kawasaki Z900</option>
+          <option value="Suzuki SV650">Suzuki SV650</option>
+          <option value="Honda CB650R">Honda CB650R</option>
+          <option value="BMW F900R">BMW F900R</option>
+          <option value="Triumph Bonneville T120">Triumph Bonneville T120</option>
+          <option value="KTM 390 Duke">KTM 390 Duke</option>
+          <option value="Harley-Davidson Iron 883">Harley-Davidson Iron 883</option>
+        </select>
+          </h5>
+        </div>
+      </div>
+      <br /><br />
     </div>
+  </div>
 
-    <!-- End Document
+  <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  </body>
+</body>
+
 </html>
