@@ -30,7 +30,7 @@
 
 <body>
     <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
     <div class="section hero">
         <div class="container">
@@ -49,35 +49,49 @@
                         <div class="row">
                             <div class="six columns">
                                 <label for="nameInput">Name</label>
-                                <input class="u-full-width" type="text" id="nameInput" name="name" placeholder="Enter your name" required>
+                                <input class="u-full-width" type="text" id="nameInput" name="name"
+                                    placeholder="Enter your name" required>
                             </div>
                             <div class="six columns">
                                 <label for="emailInput">Email</label>
-                                <input class="u-full-width" type="email" id="emailInput" name="email" placeholder="Enter your email" required>
+                                <input class="u-full-width" type="email" id="emailInput" name="email"
+                                    placeholder="Enter your email" required>
                             </div>
                         </div>
                         <div class="row">
                             <div class="twelve columns">
                                 <label for="technologyInput">Technology</label>
-                                <input class="u-full-width" type="text" id="technologyInput" name="technology" placeholder="Enter technology" value="selenium" disabled>
+                                <input class="u-full-width" type="text" id="technologyInput" name="technology"
+                                    placeholder="Enter technology" value="selenium" disabled>
                             </div>
                         </div>
                         <div class="row">
                             <div class="twelve columns">
                                 <label for="messageTextarea">Message</label>
-                                <textarea class="u-full-width" id="messageTextarea" name="message" placeholder="Enter your message" required></textarea>
+                                <textarea class="u-full-width" id="messageTextarea" name="message"
+                                    placeholder="Enter your message" required></textarea>
                             </div>
                         </div>
                         <div class="row">
                             <div class="twelve columns">
-                                <input class="button-primary" type="submit" value="Submit" onclick="window.location.href='elementsInteractions.html'">
+                                <input class="button-primary" type="submit" value="Submit">
                             </div>
                         </div>
                     </form>
+                    <div class="row">
+                        <div class="twelve columns">
+                            <button class="button-primary" id="toggleButton" onclick="toggleButtonColor()">Toggle
+                                Color</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="six columns">
-                        <h4 style="color:orangered" name="about-header">About Automation Selenium</h4>
-                        <p name="about=text">Automation Selenium is a powerful open-source framework for automating web browsers. It provides a simple and flexible way to write automated tests using various programming languages, including Java, Python, and C#. With Selenium, you can simulate user interactions, perform actions like clicking buttons and filling forms, and verify the behavior of web applications.</p>
+                    <h4 style="color:orangered" name="about-header">About Automation Selenium</h4>
+                    <p name="about=text">Automation Selenium is a powerful open-source framework for automating web
+                        browsers. It provides a simple and flexible way to write automated tests using various
+                        programming languages, including Java, Python, and C#. With Selenium, you can simulate user
+                        interactions, perform actions like clicking buttons and filling forms, and verify the behavior
+                        of web applications.</p>
                 </div>
             </div>
             <br /><br />
@@ -85,7 +99,20 @@
     </div>
 
     <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script>
+        function toggleButtonColor() {
+            console.log("Button Clicked");
+            let button = document.getElementById("toggleButton");
+            if (button.classList.contains("button-primary")) {
+                button.classList.remove("button-primary");
+                button.classList.add("button");
+            } else {
+                button.classList.remove("button");
+                button.classList.add("button-primary");
+            }
+        }
+    </script>
 </body>
 
 </html>
