@@ -33,31 +33,30 @@
       function fnAlert() {
         let status = alert("Alert Here");
         if (status == undefined) {
-          document.getElementById("result").innerHTML = "Alert popup Accepted";
+          document.getElementById("result").innerHTML = "Alert Accepted";
         }
       }
       function fnConfirm() {
         let status = confirm("Accept or Dismiss");
         if (status) {
           document.getElementById("result").innerHTML =
-            "Confirm popup Accepted";
+            "Confirm Accepted";
         } else {
           document.getElementById("result").innerHTML =
-            "Confirm popup Dismissed";
+            "Confirm Dismissed";
         }
       }
       function fnPrompt() {
-        do {
-          let text = prompt("Enter Text Here");
-          condition = true;
-          if (text == null || text == "") {
-          } else {
-            condition = false;
-            document.getElementById(
-              "result"
-            ).innerHTML = `${text} is entered in Prompt popup`;
-          }
-        } while (condition);
+        let text = prompt("Enter Text Here");
+
+        if (text == null || text == "") {
+          document.getElementById("result").innerHTML =
+            "Prompt Dismissed";
+        } else {
+          document.getElementById(
+            "result"
+          ).innerHTML = `${text} is entered in Prompt`;
+        }
       }
     </script>
   </head>
