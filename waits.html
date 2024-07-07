@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8" />
+    <title>Test Website | Waits</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link
+      href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <style>
+      body {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Primary Page Layout
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <div class="section hero">
+      <div class="container">
+        <div class="row">
+          <div class="eight columns">
+            <h4 class="hero-heading bold">Try Implementing Waits</h4>
+          </div>
+          <div class="four columns">
+            <a href="index.html" class="button">Back To Home</a>
+          </div>
+        </div>
+        <br /><br />
+        <div class="row">
+          <div class="twelve columns">
+            <h3>Timer:</h3>
+            <p id="timer">0 seconds</p>
+          </div>
+        </div>
+        <br /><br />
+        <div class="row">
+          <div class="twelve columns">
+            <h3>Page Loads after 5 seconds</h3>
+          </div>
+        </div>
+        <br /><br />
+        <div class="row">
+          <div class="twelve columns">
+            <button id="myButton" disabled>Button will be enabled after 10 seconds</button>
+          </div>
+        </div>
+        <br /><br />
+        <div class="row">
+          <div class="twelve columns">
+            Enter Name <input id="myInput" />
+          </div>
+        </div>
+        <br /><br />
+      </div>
+    </div>
+
+    <script>
+      window.addEventListener("load", () => {
+        const inputField = document.getElementById("myInput");
+        const button = document.getElementById("myButton");
+        const timer = document.getElementById("timer");
+
+        // Disable the button initially
+        button.disabled = true;
+        button.style.backgroundColor = "gray";
+        button.style.color = "white";
+
+        // Disable the input initially
+        inputField.disabled = true;
+
+        // Enable the button after 10 seconds
+        setTimeout(() => {
+          button.disabled = false;
+          button.style.backgroundColor = "green";
+          button.style.color = "white";
+        }, 10000);
+
+        let seconds = 0;
+        const timerInterval = setInterval(() => {
+          seconds++;
+          timer.textContent = `${seconds} seconds`;
+        }, 1000);
+
+        // Show the body after 5 seconds
+        setTimeout(() => {
+          document.body.style.display = "block";
+        }, 5000);
+
+        // Change button text and background color on click
+        button.addEventListener("click", () => {
+          button.style.backgroundColor = "blue";
+          button.textContent = "Clicked & Below Input will be enabled in another 5 seconds !";
+          setTimeout(() => {
+            inputField.disabled = false;
+          }, 5000);
+        });
+      });
+    </script>
+
+    <!-- End Document
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  </body>
+</html>
