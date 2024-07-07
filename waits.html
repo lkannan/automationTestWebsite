@@ -29,12 +29,6 @@
     <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-    <style>
-      body {
-        display: none;
-      }
-    </style>
   </head>
 
   <body>
@@ -61,20 +55,20 @@
         <br /><br />
         <div class="row">
           <div class="twelve columns">
-            <h3>Page Loads after 5 seconds</h3>
+            <h3 id="headerText">Text changes after 5 seconds</h3>
           </div>
         </div>
         <br /><br />
         <div class="row">
           <div class="twelve columns">
-            <button id="myButton" disabled>Button will be enabled after 10 seconds</button>
+            <button id="myButton" disabled>
+              Button will be enabled after 10 seconds
+            </button>
           </div>
         </div>
         <br /><br />
         <div class="row">
-          <div class="twelve columns">
-            Enter Name <input id="myInput" />
-          </div>
+          <div class="twelve columns">Enter Name <input id="myInput" /></div>
         </div>
         <br /><br />
       </div>
@@ -85,6 +79,7 @@
         const inputField = document.getElementById("myInput");
         const button = document.getElementById("myButton");
         const timer = document.getElementById("timer");
+        const headerText = document.getElementById("headerText");
 
         // Disable the button initially
         button.disabled = true;
@@ -107,15 +102,16 @@
           timer.textContent = `${seconds} seconds`;
         }, 1000);
 
-        // Show the body after 5 seconds
+        // change text after 5 seconds
         setTimeout(() => {
-          document.body.style.display = "block";
+          headerText.innerHTML = "Text Changed";
         }, 5000);
 
         // Change button text and background color on click
         button.addEventListener("click", () => {
           button.style.backgroundColor = "blue";
-          button.textContent = "Clicked & Below Input will be enabled in another 5 seconds !";
+          button.textContent =
+            "Clicked & Below Input will be enabled in another 5 seconds !";
           setTimeout(() => {
             inputField.disabled = false;
           }, 5000);
