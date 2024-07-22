@@ -4,7 +4,7 @@
     <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8" />
-    <title>Test Website</title>
+    <title>Test Website | File Upload</title>
     <meta name="description" content="" />
     <meta name="author" content="" />
 
@@ -30,58 +30,33 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </head>
-  <body onload="fnOnLoadTrigger()">
+
+  <body>
     <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
     <div class="section hero">
       <div class="container">
         <div class="row">
-          <div class="one-half column">
-            <h4 class="hero-heading bold">
-              Test Website for Automation Practice
-            </h4>
+          <div class="eight columns">
+            <h4 class="hero-heading bold">Try File Uploading</h4>
+          </div>
+          <div class="four columns">
+            <a href="index.html" class="button">Back To Home</a>
           </div>
         </div>
+        <br />
         <div class="row">
-          <div class="one columns">
-            <a class="button button-primary" href="multipleWindows.html"
-              >Multiple Windows</a
-            >
-            <a class="button button-primary" href="interactions.html">Interaction</a>
-            <a class="button button-primary" href="checkbox.html">Checkbox</a>
-            <a class="button button-primary" href="dropdown.html">Dropdown</a>
-            <a class="button button-primary" href="changeDOMAttribute.html"
-              >Change DOM Attributes</a
-            >
-            <a class="button button-primary" href="alerts.html">Alert</a>
-            <a class="button button-primary" href="frames.html">Iframe</a>
-            <a class="button button-primary" href="waits.html">Waits</a>
-            <a class="button button-primary" href="fileUpload.html">File Upload</a>
-            
-                        
+          <div class="twelve columns">
+            <h3 style="text-align: left;">File Upload</h3>
+            <h5><Input id="fUpload" type="file"/></h5>
           </div>
-          <div class="three column"></div>
         </div>
+        <br />
       </div>
     </div>
 
-    <script>
-      let myLinks = [
-        "https://www.google.co.in/",
-        "https://www.amazon.in/",
-        "https://fast.com/",
-        "https://www.selenium.dev/",
-      ];
-
-      function fnOnLoadTrigger() {
-        myLinks.forEach((link) => {
-          // window.open(link);
-        });
-      }
-    </script>
-
     <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   </body>
 </html>
