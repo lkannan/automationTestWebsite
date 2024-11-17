@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8" />
@@ -15,7 +14,11 @@
 
     <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css" />
+    <link
+      href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -26,150 +29,222 @@
     <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Primary Page Layout
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
     <div class="section hero">
-        <div class="container">
-            <div class="row">
-                <div class="eight columns">
-                    <h4 class="hero-heading bold">Try Interacting with Elements</h4>
+      <div class="container">
+        <div class="row">
+          <div class="eight columns">
+            <h4 class="hero-heading bold">Try Interacting with Elements</h4>
+          </div>
+          <div class="four columns">
+            <a href="index.html" class="button button">Back To Home</a>
+          </div>
+        </div>
+        <br /><br />
+        <div class="row">
+          <div class="six columns">
+            <form class="skeleton-form" action="#" method="post">
+              <div class="row">
+                <div class="six columns">
+                  <label for="nameInput">Name</label>
+                  <input
+                    class="u-full-width"
+                    type="text"
+                    id="nameInput"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div class="six columns">
+                  <label for="emailInput">Email</label>
+                  <input
+                    class="u-full-width"
+                    type="email"
+                    id="emailInput"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="twelve columns">
+                  <label for="technologyInput"
+                    >Technology (Disabled field)</label
+                  >
+                  <input
+                    class="u-full-width"
+                    type="text"
+                    id="technologyInput"
+                    name="technology"
+                    placeholder="Enter technology"
+                    value="selenium"
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="twelve columns">
+                  <label for="statusCheckbox">Mode</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="six columns">
+                  <div>
+                    Online
+                    <input
+                      type="checkbox"
+                      id="onlineCheckbox"
+                      name="status"
+                      value="online"
+                      checked
+                    />
+                  </div>
+                </div>
+                <div class="six columns">
+                  <div>
+                    Offline
+                    <input
+                      type="checkbox"
+                      id="offlineCheckbox"
+                      name="status"
+                      value="offline"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="twelve columns">
+                  <label for="proficiencyRadio">Proficiency</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="four columns">
+                  <div>
+                    Beginner
+                    <input
+                      type="radio"
+                      id="beginnerRadio"
+                      name="proficiency"
+                      value="beginner"
+                      checked
+                    />
+                  </div>
                 </div>
                 <div class="four columns">
-                    <a href="index.html" class="button button">Back To Home</a>
+                  <div>
+                    Intermediate
+                    <input
+                      type="radio"
+                      id="intermediateRadio"
+                      name="proficiency"
+                      value="intermediate"
+                    />
+                  </div>
                 </div>
-            </div>
-            <br><br>
+                <div class="four columns">
+                  <div>
+                    Expert
+                    <input
+                      type="radio"
+                      id="expertRadio"
+                      name="proficiency"
+                      value="expert"
+                    />
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="row">
+                <div class="twelve columns">
+                  <label for="messageTextarea">Message</label>
+                  <textarea
+                    class="u-full-width"
+                    id="messageTextarea"
+                    name="message"
+                    placeholder="Enter your message"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="twelve columns">
+                  <input class="button-primary" type="submit" value="Submit" />
+                </div>
+              </div>
+            </form>
             <div class="row">
-                <div class="six columns">
-                    <form class="skeleton-form" action="#" method="post">
-                        <div class="row">
-                            <div class="six columns">
-                                <label for="nameInput">Name</label>
-                                <input class="u-full-width" type="text" id="nameInput" name="name"
-                                    placeholder="Enter your name" required>
-                            </div>
-                            <div class="six columns">
-                                <label for="emailInput">Email</label>
-                                <input class="u-full-width" type="email" id="emailInput" name="email"
-                                    placeholder="Enter your email" required>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="twelve columns">
-                                <label for="technologyInput">Technology (Disabled field)</label>
-                                <input class="u-full-width" type="text" id="technologyInput" name="technology"
-                                    placeholder="Enter technology" value="selenium" disabled>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="twelve columns">
-                                <label for="statusCheckbox">Mode</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="six columns">
-                                <div>
-                                    Online <input type="checkbox" id="onlineCheckbox" name="status" value="online"
-                                        checked>
-                                </div>
-                            </div>
-                            <div class="six columns">
-                                <div>
-                                    Offline <input type="checkbox" id="offlineCheckbox" name="status" value="offline">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="twelve columns">
-                                <label for="proficiencyRadio">Proficiency</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="four columns">
-                                <div>
-                                    Beginner <input type="radio" id="beginnerRadio" name="proficiency" value="beginner" checked>
-                                </div>
-                            </div>
-                            <div class="four columns">
-                                <div>
-                                    Intermediate <input type="radio" id="intermediateRadio" name="proficiency" value="intermediate">
-                                </div>
-                            </div>
-                            <div class="four columns">
-                                <div>
-                                    Expert <input type="radio" id="expertRadio" name="proficiency" value="expert">
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="twelve columns">
-                                <label for="messageTextarea">Message</label>
-                                <textarea class="u-full-width" id="messageTextarea" name="message"
-                                    placeholder="Enter your message" required></textarea>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="twelve columns">
-                                <input class="button-primary" type="submit" value="Submit">
-                            </div>
-                        </div>
-                    </form>
-                    <div class="row">
-                        <div class="twelve columns">
-                            <button class="button-primary" id="toggleButton" onclick="toggleButtonColor()">Toggle
-                                Color</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="six columns">
-                    <h4 style="color:orangered" name="about-header">About Automation Selenium</h4>
-                    <p name="about-text">Automation Selenium is a powerful open-source framework for automating web
-                        browsers. It provides a simple and flexible way to write automated tests using various
-                        programming languages, including Java, Python, and C#. With Selenium, you can simulate user
-                        interactions, perform actions like clicking buttons and filling forms, and verify the behavior
-                        of web applications.</p>
-                </div>
+              <div class="twelve columns">
+                <button
+                  class="button-primary"
+                  id="toggleButton"
+                  onclick="toggleButtonColor()"
+                >
+                  Toggle Color
+                </button>
+              </div>
             </div>
-            <br /><br />
+          </div>
+          <div class="six columns">
+            <h4 style="color: orangered" name="about-header">
+              About Automation Selenium
+            </h4>
+            <p name="about-text">
+              Automation Selenium is a powerful open-source framework for
+              automating web browsers. It provides a simple and flexible way to
+              write automated tests using various programming languages,
+              including Java, Python, and C#. With Selenium, you can simulate
+              user interactions, perform actions like clicking buttons and
+              filling forms, and verify the behavior of web applications.
+            </p>
+          </div>
         </div>
+        <br /><br />
+      </div>
     </div>
 
     <!-- End Document
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script>
-        function toggleButtonColor() {
-            console.log("Button Clicked");
-            let button = document.getElementById("toggleButton");
-            if (button.classList.contains("button-primary")) {
-                button.classList.remove("button-primary");
-                button.classList.add("button");
-            } else {
-                button.classList.remove("button");
-                button.classList.add("button-primary");
-            }
+      function toggleButtonColor() {
+        console.log("Button Clicked");
+        let button = document.getElementById("toggleButton");
+        if (button.classList.contains("button-primary")) {
+          button.classList.remove("button-primary");
+          button.classList.add("button");
+        } else {
+          button.classList.remove("button");
+          button.classList.add("button-primary");
         }
+      }
     </script>
-</body>
-<footer class="footer">
+  </body>
+  <footer class="footer">
     <div class="container">
-        <div class="row">
-            <div class="one-full columns">
-                <p>
-                    Subscribe & Follow for more.!
-                    <img class="icons" src="/assets/icons/youtube.png" />
-                    <a href="https://www.youtube.com/@code-with-sri?sub_confirmation=1">Youtube</a>
-          
-                    <img class="icons" src="/assets/icons/instagram.png" />
-                    <a href="https://www.instagram.com/code.with.sri/">Instagram</a>
-                </p>
-            </div>
-        </div>
-    </div>
-</footer>
+      <div class="row">
+        <div class="one-full columns">
+          <p>
+            Subscribe & Follow for more.!
+            <img class="icons" src="/assets/icons/youtube.png" />
+            <a
+              href="https://www.youtube.com/@code-with-sri?sub_confirmation=1"
+              target="_blank"
+              >Youtube</a
+            >
 
+            <img class="icons" src="/assets/icons/instagram.png" />
+            <a href="https://www.instagram.com/code.with.sri/" target="_blank"
+              >Instagram</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </html>
