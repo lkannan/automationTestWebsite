@@ -175,6 +175,7 @@ a {
   text-decoration: none;
 
 }
+<<<<<<< HEAD
 
 table {
   width: 100%;
@@ -196,3 +197,5 @@ tr:nth-child(even) {
 tr:hover {
   background-color: #f1f1f1;
 }
+=======
+>>>>>>> e14eb4652eb1dee495c59627863fd3091e25949e
