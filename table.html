@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8" />
+    <title>Test Website | Frames</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link
+      href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Primary Page Layout
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <div class="section hero">
+      <div class="container">
+        <div class="row">
+          <div class="eight columns">
+            <h4 class="hero-heading bold">Try handling Tables</h4>
+          </div>
+          <div class="four columns">
+            <a href="index.html" class="button button">Back To Home</a>
+          </div>
+        </div>
+        <br /><br />
+        <div class="row">
+          <div class="twelve columns">
+            
+      <h1>Comprehensive Car Details</h1>      
+
+          </div>
+        </div>
+      </div>
+      
+    <table>
+        <thead>
+            <tr>
+                <th>Car Make</th>
+                <th>Model</th>
+                <th>Year</th>
+                <th>Price</th>
+                <th>Fuel Type</th>
+                <th>Mileage (MPG)</th>
+                <th>Engine Size (L)</th>
+                <th>Transmission</th>
+                <th>Horsepower</th>
+                <th>Torque (Nm)</th>
+                <th>Color</th>
+                <th>Body Type</th>
+                <th>Seats</th>
+                <th>Doors</th>
+                <th>Drive Type</th>
+                <th>Safety Rating</th>
+                <th>Warranty (Years)</th>
+                <th>Bluetooth</th>
+                <th>Sunroof</th>
+                <th>Navigation System</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Toyota</td>
+                <td>Camry</td>
+                <td>2023</td>
+                <td>$30,000</td>
+                <td>Hybrid</td>
+                <td>50</td>
+                <td>2.5</td>
+                <td>Automatic</td>
+                <td>203</td>
+                <td>249</td>
+                <td>White</td>
+                <td>Sedan</td>
+                <td>5</td>
+                <td>4</td>
+                <td>FWD</td>
+                <td>5 Stars</td>
+                <td>5</td>
+                <td>Yes</td>
+                <td>No</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Ford</td>
+                <td>Mustang</td>
+                <td>2022</td>
+                <td>$55,000</td>
+                <td>Petrol</td>
+                <td>25</td>
+                <td>5.0</td>
+                <td>Manual</td>
+                <td>450</td>
+                <td>529</td>
+                <td>Red</td>
+                <td>Coupe</td>
+                <td>4</td>
+                <td>2</td>
+                <td>RWD</td>
+                <td>4 Stars</td>
+                <td>3</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Tesla</td>
+                <td>Model 3</td>
+                <td>2023</td>
+                <td>$40,000</td>
+                <td>Electric</td>
+                <td>120</td>
+                <td>0.0</td>
+                <td>Automatic</td>
+                <td>283</td>
+                <td>400</td>
+                <td>Blue</td>
+                <td>Sedan</td>
+                <td>5</td>
+                <td>4</td>
+                <td>AWD</td>
+                <td>5 Stars</td>
+                <td>4</td>
+                <td>Yes</td>
+                <td>No</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>BMW</td>
+                <td>3 Series</td>
+                <td>2020</td>
+                <td>$42,000</td>
+                <td>Petrol</td>
+                <td>30</td>
+                <td>2.0</td>
+                <td>Automatic</td>
+                <td>255</td>
+                <td>400</td>
+                <td>Black</td>
+                <td>Sedan</td>
+                <td>5</td>
+                <td>4</td>
+                <td>RWD</td>
+                <td>5 Stars</td>
+                <td>4</td>
+                <td>Yes</td>
+                <td>No</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+    <!-- End Document
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script>
+      function toggleButtonColor(id) {
+        console.log("Button Clicked");
+        let button = document.getElementById("toggleButton" + id);
+        if (button.classList.contains("button-primary")) {
+          button.classList.remove("button-primary");
+          button.classList.add("button");
+        } else {
+          button.classList.remove("button");
+          button.classList.add("button-primary");
+        }
+      }
+    </script>
+  </body>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="one-full columns">
+          <p>
+            Subscribe & Follow for more.!
+            <img class="icons" src="youtube.png" />
+            <a
+              href="https://www.youtube.com/@code-with-sri?sub_confirmation=1"
+              target="_blank"
+              >Youtube</a
+            >
+
+            <img class="icons" src="instagram.png" />
+            <a href="https://www.instagram.com/code.with.sri/" target="_blank"
+              >Instagram</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>

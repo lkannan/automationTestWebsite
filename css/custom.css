@@ -163,7 +163,7 @@
 }
 
 .footer {
-  margin-top: 30rem;
+  margin-top: 20rem;
 }
 
 .icons {
@@ -174,4 +174,25 @@
 a {
   text-decoration: none;
 
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+}
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+th {
+  background-color: #f4f4f4;
+}
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+tr:hover {
+  background-color: #f1f1f1;
 }
